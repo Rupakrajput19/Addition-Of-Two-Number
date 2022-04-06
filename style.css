@@ -50,20 +50,21 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1300px) {
   #box {
-    width: 450px;
-    margin: 100px;
-  }
-  input {
-  }
-  button {
-    padding: 10px 20px;
+    width: 600px;
+    margin: 100px 190px;
   }
   #demo {
     margin: 10px;
   }
   footer{
-      width: 680px;
+    width: 999px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
