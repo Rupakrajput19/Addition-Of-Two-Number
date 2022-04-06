@@ -26,10 +26,10 @@ button {
   border: none;
   border-radius: 10px;
   padding: 10px 50px;
-  box-shadow: 2px 2px 10px wheat, -2px -2px 10px wheat;
+  box-shadow: none;
 }
 button:hover {
-  box-shadow: none;
+  box-shadow: 2px 2px 10px wheat, -2px -2px 10px wheat;
 }
 p {
   font-size: large;
@@ -51,16 +51,34 @@ footer a:hover {
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width:1000px) and (max-width: 1300px) {
   #box {
     width: 600px;
-    margin: 100px 190px;
+    margin: 200px 190px;
   }
   #demo {
     margin: 10px;
   }
   footer{
     width: 999px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #box {
+    width: 450px;
+    margin: 100px 50px;
+  }
+  #demo {
+    margin: 10px;
+  }
+  footer{
+    width: 680px;
     position: fixed;
     bottom: 0;
     left: 0;
